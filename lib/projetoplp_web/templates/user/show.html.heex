@@ -1,0 +1,33 @@
+<h1>Detalhes do Usuário</h1>
+
+<ul>
+
+  <li>
+    <strong>Nome:</strong>
+    <%= @user.name %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @user.email %>
+  </li>
+
+  <li>
+    <strong>País:</strong>
+    <%= @user.estado %>
+  </li>
+
+  <li>
+    <strong>Cidade:</strong>
+    <%= @user.cidade %>
+  </li>
+
+  <li>
+    <strong>Rua:</strong>
+    <%= @user.rua %>
+  </li>
+
+</ul>
+
+<span><%= link "Editar", to: Routes.user_path(@conn, :edit, @user) %></span> |
+<span><%= link "Voltar", to: Routes.user_path(@conn, :index) %></span>
